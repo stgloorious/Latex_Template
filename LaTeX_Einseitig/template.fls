@@ -132,12 +132,6 @@ INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries
 INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfmodulematrix.code.tex
 INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarytopaths.code.tex
 INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarytopaths.code.tex
-INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\textcomp.sty
-INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\textcomp.sty
-INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1enc.def
-INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1enc.def
-INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1enc.dfu
-INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1enc.dfu
 INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.sty
 INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.sty
 INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\generic\iftex\ifvtex.sty
@@ -314,8 +308,6 @@ INPUT ..\.git\refs\heads\master.
 INPUT template.aux
 INPUT template.aux
 OUTPUT template.aux
-INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1cmr.fd
-INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1cmr.fd
 INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\epstopdf-pkg\epstopdf-base.sty
