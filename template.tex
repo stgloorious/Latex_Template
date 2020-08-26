@@ -1,0 +1,131 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{tikz}
+\usepackage{textcomp}
+\usepackage{geometry}
+\usepackage{acronym}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usetikzlibrary{angles,shapes,arrows,arrows.meta, chains, external}
+\usepackage{fancyhdr}
+\usepackage[hidelinks]{hyperref}
+\usepackage{multicol} %
+\usepackage{lastpage} % Total number of pages
+\usepackage{titling} % Change title appearance
+\usepackage{sectsty} % Setting all section labels to sans serif font
+\usepackage{secdot} % Adds dot after section labels
+%\usepackage{mVersion}
+
+%%% PREAMBLE %%%
+% formatting and title
+
+\pretitle{
+    \begin{flushleft}
+    \huge
+    \sffamily
+}
+\posttitle{
+    \par
+    \end{flushleft}
+    \vskip 0.5em
+}
+\preauthor{
+    \begin{flushleft}
+    \large
+    \sffamily
+}
+\postauthor{
+    \par
+    \end{flushleft}
+}
+\predate{
+    \begin{flushleft}
+    \sffamily
+    \large
+}
+\postdate{
+    \par
+    \end{flushleft}
+}
+
+% Initialize the counter
+\newcounter{versionNumber}
+
+
+
+\makeatletter 
+% At the end write the current value back to the `.aux` file
+\AtEndDocument{%
+  \immediate\write\@auxout{%
+    \string\setcounter{versionNumber}{\number\value{versionNumber}}%
+  }%
+}
+
+\makeatother
+% Step the counter at the beginning
+\AtBeginDocument{%
+   \stepcounter{versionNumber}
+}
+
+    
+\geometry{
+  left=3cm,
+  right=3cm,
+  top=2cm,
+  bottom=2cm
+}
+
+%\setlength\parindent{0pt}
+\title{\vspace{-3cm}\textbf{Einseitiges Template}}
+\author{Stefan Gloor}
+
+\allsectionsfont{\normalfont\sffamily\bfseries}
+\sectiondot{section}
+\sectiondot{subsection}
+\sectiondot{subsubsection}
+
+\fancypagestyle{TitlePageStyle}{ %% frontpage
+    \fancyhead{}
+    \cfoot{\sffamily \today \\ Build:}
+    \lfoot{\sffamily Stefan Gloor \\ ETH-ITET}
+    \rfoot{\sffamily Seite \thepage \protect{ }von \pageref{LastPage}}
+    \renewcommand{\headrulewidth}{0pt}
+    \renewcommand{\footrulewidth}{0.5pt}
+}
+
+\cfoot{\sffamily \today} %% following pages
+\lfoot{\sffamily Stefan Gloor \\ ETH-ITET}
+\rfoot{\sffamily Seite \thepage \protect{ }von \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.5pt}
+\pagestyle{fancy}
+
+\begin{document}
+\maketitle
+\thispagestyle{TitlePageStyle}
+
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   
+
+
+\section{Section}
+
+At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata ut vero voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.   
+
+Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+
+    \subsection{Subsection}
+
+    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus.   
+
+    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+    
+    \subsection{Subsection}
+    
+    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   
+
+    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.   
+
+\end {document}
