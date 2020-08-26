@@ -22,7 +22,7 @@ For Latex Workshop in VS Code:
 
 ![tool](https://github.com/stgloorious/Latex_Template/blob/master/docs/tools.png)
 
-Thanks barghest for his answer [here.](https://tex.stackexchange.com/questions/261341/using-texstudio-and-git-to-automatically-commit-using-the-current-date)
-
+Thanks **barghest** for their answer [here.](https://tex.stackexchange.com/questions/261341/using-texstudio-and-git-to-automatically-commit-using-the-current-date)
+Thanks **CL.** for their answer [here.](https://tex.stackexchange.com/questions/455396/how-to-include-the-current-git-commit-id-and-branch-in-my-document)
 ![Screenshot](https://github.com/stgloorious/Latex_Template/blob/master/docs/screenshot.png)
 
