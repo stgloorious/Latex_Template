@@ -6,6 +6,8 @@ INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cl
 INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls
 INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size10.clo
 INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size10.clo
+INPUT template_package.sty
+INPUT template_package.sty
 INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inputenc.sty
 INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inputenc.sty
 INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.sty
@@ -276,6 +278,40 @@ INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\secdot\secdot.s
 INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\secdot\secdot.sty
 INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\catchfile.sty
 INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\catchfile.sty
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\titleref\titleref.sty
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\titleref\titleref.sty
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\blindtext\blindtext.sty
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\blindtext\blindtext.sty
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\xspace.sty
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\xspace.sty
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\datetime\datetime.sty
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\datetime\datetime.sty
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fmtcount\fmtcount.sty
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fmtcount\fmtcount.sty
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.tex
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fmtcount\fcprefix.sty
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fmtcount\fcprefix.sty
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fmtcount\fcnumparser.sty
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fmtcount\fcnumparser.sty
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fmtcount\fc-ngerman.def
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fmtcount\fc-ngerman.def
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fmtcount\fc-german.def
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fmtcount\fc-german.def
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fmtcount\fc-germanb.def
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fmtcount\fc-germanb.def
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fmtcount\fc-ngermanb.def
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fmtcount\fc-ngermanb.def
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\datetime\datetime-defaults.sty
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\datetime\datetime-defaults.sty
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\datetime\dt-ngerman.def
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\datetime\dt-ngerman.def
 INPUT ..\.git\HEAD.
 INPUT ..\.git\HEAD.
 INPUT ..\.git\refs\heads\master.
@@ -304,20 +340,29 @@ OUTPUT template.pdf
 INPUT .\template.out
 INPUT .\template.out
 OUTPUT template.out
-INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm2074.tfm
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm2488.tfm
 INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1cmss.fd
 INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1cmss.fd
-INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecss2074.tfm
-INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecsx2074.tfm
-INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm1200.tfm
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecss2488.tfm
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecsx2488.tfm
 INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecss1200.tfm
-INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecss1000.tfm
 INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm1440.tfm
 INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecbx1440.tfm
 INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecss1440.tfm
 INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecsx1440.tfm
-INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecbx1200.tfm
-INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecsx1200.tfm
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam7.tfm
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msam5.tfm
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecss1000.tfm
 INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1cmtt.fd
 INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1cmtt.fd
 INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\jknappen\ec\ectt1000.tfm
@@ -326,17 +371,31 @@ INPUT template.aux
 INPUT .\template.out
 INPUT .\template.out
 INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\cm-super\cm-super-t1.enc
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmex10.pfb
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmex10.pfb
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi10.pfb
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi10.pfb
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi7.pfb
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi7.pfb
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr10.pfb
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr10.pfb
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr5.pfb
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr5.pfb
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr7.pfb
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr7.pfb
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy7.pfb
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy7.pfb
 INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\cm-super\sfrm1000.pfb
 INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\cm-super\sfrm1000.pfb
 INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\cm-super\sfss1000.pfb
 INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\cm-super\sfss1000.pfb
 INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\cm-super\sfss1200.pfb
 INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\cm-super\sfss1200.pfb
-INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\cm-super\sfsx1200.pfb
-INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\cm-super\sfsx1200.pfb
 INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\cm-super\sfsx1440.pfb
 INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\cm-super\sfsx1440.pfb
-INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\cm-super\sfsx2074.pfb
-INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\cm-super\sfsx2074.pfb
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\cm-super\sfsx2488.pfb
+INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\cm-super\sfsx2488.pfb
 INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\cm-super\sftt1000.pfb
 INPUT C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\cm-super\sftt1000.pfb

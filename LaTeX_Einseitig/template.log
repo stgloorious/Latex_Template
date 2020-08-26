@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.3.24)  26 AUG 2020 14:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.3.24)  26 AUG 2020 19:14
 entering extended mode
 **c:/Users/stefa/Dropbox/Documents/Schule/Studium/Template/LaTeX_Einseitig/template.tex
 (c:/Users/stefa/Dropbox/Documents/Schule/Studium/Template/LaTeX_Einseitig/template.tex
@@ -19,7 +19,7 @@ File: size10.clo 2019/10/25 v1.4k Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-) ("C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\inputenc.sty"
+) (template_package.sty ("C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\inputenc.sty"
 Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
@@ -758,42 +758,134 @@ LaTeX Warning: Command \underline  has changed.
 Package: secdot 2000/06/20 v1.0 section numbers with dots
 ) ("C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\catchfile.sty"
 Package: catchfile 2016/05/16 v1.7 Catch the contents of a file (HO)
-) (../.git/HEAD.) (../.git/refs/heads/master.) (template.aux)
+) ("C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/titleref\titleref.sty"
+Package: titleref 2001/04/05 v3.1  Cross-references with titles.
+) ("C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/blindtext\blindtext.sty"
+Package: blindtext 2012/01/06 V2.0 blindtext-Package
+ ("C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\xspace.sty"
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+\c@blindtext=\count148
+\c@Blindtext=\count149
+\c@blind@countparstart=\count150
+\blind@countxx=\count151
+\blindtext@numBlindtext=\count152
+\blind@countyy=\count153
+\c@blindlist=\count154
+\c@blindlistlevel=\count155
+\c@blindlist@level=\count156
+\blind@listitem=\count157
+\c@blind@listcount=\count158
+\c@blind@levelcount=\count159
+\blind@mathformula=\count160
+\blind@Mathformula=\count161
+\c@blind@randomcount=\count162
+\c@blind@randommax=\count163
+\c@blind@pangramcount=\count164
+\c@blind@pangrammax=\count165
+) ("C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/datetime\datetime.sty"
+Package: datetime 2015/03/20 v2.60 Date Time Package
+ ("C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/etoolbox\etoolbox.sty"
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count166
+) ("C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fmtcount\fmtcount.sty"
+Package: fmtcount 2020/01/30 v3.07
+ ("C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+) ("C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xkeyval\xkeyval.sty"
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+ ("C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xkeyval\xkeyval.tex" ("C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xkeyval\xkvutils.tex"
+\XKV@toks=\toks36
+\XKV@tempa@toks=\toks37
+)
+\XKV@depth=\count167
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) ("C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fmtcount\fcprefix.sty"
+Package: fcprefix 2012/09/28
+ ("C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fmtcount\fcnumparser.sty"
+Package: fcnumparser 2017/06/15
+\fc@digit@counter=\count168
+))
+\c@padzeroesN=\count169
+\fc@tmpcatcode=\count170
+ ("C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fmtcount\fc-ngerman.def"
+File: fc-ngerman.def 2012/06/18
+ ("C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fmtcount\fc-german.def"
+File: fc-german.def 2018/06/17
+ ("C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fmtcount\fc-germanb.def"
+File: fc-germanb.def 2013/08/17
+)) ("C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fmtcount\fc-ngermanb.def"
+File: fc-ngermanb.def 2013/08/17
+))
+\@DT@modctr=\count171
+\@ordinalctr=\count172
+\@orgargctr=\count173
+\@strctr=\count174
+\@tmpstrctr=\count175
+\@DT@loopN=\count176
+\@DT@X=\count177
+) ("C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/datetime\datetime-defaults.sty"
+Package: datetime-defaults 2013/09/10
+)
+\@day=\count178
+\@month=\count179
+\@year=\count180
+\c@HOUR=\count181
+\c@HOURXII=\count182
+\c@MINUTE=\count183
+\c@TOHOUR=\count184
+\c@TOMINUTE=\count185
+\c@SECOND=\count186
+\currenthour=\count187
+\currentminute=\count188
+\currentsecond=\count189
+Package datetime Info: No datetime.cfg file found, using default settings on input line 308.
+\@dtctr=\count190
+\dayofyear=\count191
+\dayofweek=\count192
+LaTeX Info: Redefining \today on input line 736.
+ ("C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/datetime\dt-ngerman.def"
+File: dt-ngerman.def 2013/09/10
+LaTeX Info: Redefining \datengerman on input line 86.
+)
+\dt@a=\toks38
+\dt@b=\toks39
+)) (../.git/HEAD.) (../.git/refs/heads/master.) (template.aux)
 \openout1 = `template.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 98.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 98.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 24.
  ("C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
  ABD: EveryShipout initializing macros ("C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count148
+\scratchcounter=\count193
 \scratchdimen=\dimen191
 \scratchbox=\box86
-\nofMPsegments=\count149
-\nofMParguments=\count150
-\everyMPshowfont=\toks36
-\MPscratchCnt=\count151
+\nofMPsegments=\count194
+\nofMParguments=\count195
+\everyMPshowfont=\toks40
+\MPscratchCnt=\count196
 \MPscratchDim=\dimen192
-\MPnumerator=\count152
-\makeMPintoPDFobject=\count153
-\everyMPtoPDFconversion=\toks37
+\MPnumerator=\count197
+\makeMPintoPDFobject=\count198
+\everyMPtoPDFconversion=\toks41
 ) ("C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty"
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -807,11 +899,11 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
-* v-part:(T,H,B)=(56.9055pt, 702.78308pt, 85.35826pt)
+* v-part:(T,H,B)=(56.9055pt, 688.5567pt, 99.58464pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=483.69687pt
-* \textheight=702.78308pt
+* \textheight=688.5567pt
 * \oddsidemargin=-15.36449pt
 * \evensidemargin=-15.36449pt
 * \topmargin=-52.36449pt
@@ -833,7 +925,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box87
-Package hyperref Info: Link coloring OFF on input line 98.
+Package hyperref Info: Link coloring OFF on input line 24.
 ("C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  ("C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\refcount.sty"
@@ -841,50 +933,59 @@ Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 ) ("C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count154
+\c@section@level=\count199
 )
-LaTeX Info: Redefining \ref on input line 98.
-LaTeX Info: Redefining \pageref on input line 98.
-LaTeX Info: Redefining \nameref on input line 98.
+LaTeX Info: Redefining \ref on input line 24.
+LaTeX Info: Redefining \pageref on input line 24.
+LaTeX Info: Redefining \nameref on input line 24.
  (template.out) (template.out)
 \@outlinefile=\write4
 \openout4 = `template.out'.
 
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 98.
-LaTeX Font Info:    Trying to load font information for T1+cmss on input line 99.
+(lastpage)             ! on input line 24.
+LaTeX Font Info:    Trying to load font information for T1+cmss on input line 26.
  ("C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\t1cmss.fd"
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-) 
-AED: lastpage setting LastPage
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 124.
-("C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\t1cmtt.fd"
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 32.
+ ("C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 32.
+ ("C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 32.
+ ("C:\Users\stefa\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\t1cmtt.fd"
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-) [1
+) [1{C:/Users/stefa/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
-{C:/Users/stefa/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 124.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 124.
+] 
+AED: lastpage setting LastPage
+[2]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 34.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 34.
  (template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 124.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 124.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 34.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 34.
 Package rerunfilecheck Info: File `template.out' has not changed.
-(rerunfilecheck)             Checksum: BAD1B66ED6D77810F29661C7071BFD1D;160.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 124.
+(rerunfilecheck)             Checksum: 92674B8AD1FBA13A00222C30F339AA6A;42.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 34.
  ) 
 Here is how much of TeX's memory you used:
- 22399 strings out of 492474
- 447042 string characters out of 3121436
- 552638 words of memory out of 3000000
- 26269 multiletter control sequences out of 15000+200000
- 13961 words of font info for 28 fonts, out of 3000000 for 9000
+ 23900 strings out of 492474
+ 470579 string characters out of 3121436
+ 606567 words of memory out of 3000000
+ 27699 multiletter control sequences out of 15000+200000
+ 13344 words of font info for 33 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,11n,69p,979b,397s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/stefa/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Users/stefa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1000.pfb><C:/Users/stefa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfss1000.pfb><C:/Users/stefa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfss1200.pfb><C:/Users/stefa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfsx1200.pfb><C:/Users/stefa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfsx1440.pfb><C:/Users/stefa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfsx2074.pfb><C:/Users/stefa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on template.pdf (1 page, 104391 bytes).
+ 68i,12n,73p,1095b,408s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/stefa/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Users/stefa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/stefa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/stefa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/stefa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/stefa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/stefa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/stefa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/stefa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/stefa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1000.pfb><C:/Users/stefa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfss1000.pfb><C:/Users/stefa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfss1200.pfb><C:/Users/stefa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfsx1440.pfb><C:/Users/stefa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfsx2488.pfb><C:/Users/stefa/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on template.pdf (2 pages, 170466 bytes).
 PDF statistics:
- 57 PDF objects out of 1000 (max. 8388607)
- 5 named destinations out of 1000 (max. 500000)
- 37 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 82 PDF objects out of 1000 (max. 8388607)
+ 4 named destinations out of 1000 (max. 500000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
