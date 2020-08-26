@@ -1,0 +1,87 @@
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{tikz}
+\usepackage{textcomp}
+\usepackage{geometry}
+\usepackage{acronym}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usetikzlibrary{angles,shapes,arrows,arrows.meta, chains, external}
+\usepackage{fancyhdr}
+\usepackage[hidelinks]{hyperref}
+\usepackage{multicol} %
+\usepackage{lastpage} % Total number of pages
+\usepackage{titling} % Change title appearance
+\usepackage{sectsty} % Setting all section labels to sans serif font
+\usepackage{secdot} % Adds dot after section labels
+\usepackage{xstring}
+\usepackage{catchfile}
+\usepackage{xcolor}
+\usepackage{titleref}
+\usepackage{blindtext}
+\usepackage{datetime}
+
+\newcommand{\version}[1]{\newcommand{\theversion}{#1}}
+\newcommand{\subtitle}[1]{\newcommand{\thesubtitle}{#1}}
+\newcommand{\departement}[1]{\newcommand{\thedepartement}{#1}}
+
+\newcommand{\onepagedesign}{
+    \allsectionsfont{\normalfont\sffamily\bfseries}
+    \sectiondot{section}
+    \sectiondot{subsection}
+    \sectiondot{subsubsection}
+
+    \geometry{
+        left=2cm,
+        right=2cm,
+        top=2cm,
+        bottom=3.5cm
+    }
+}
+
+\newcommand{\createtitlepagestyle}{
+    \fancypagestyle{TitlePageStyle}{ %% frontpage
+        \lhead{}
+        \rhead{\sffamily \theauthor}
+        \cfoot{\sffamily \phantom{X} \\\vspace{1mm} Version \theversion \\\vspace{1mm} \sffamily \today, \currenttime}
+        \lfoot{\sffamily Git ID: \texttt{\commit} \\\vspace{1mm} \thedepartement \\\vspace{1mm} \theauthor}
+        \rfoot{\sffamily on branch \texttt{\branch} \\\vspace{1mm} \jobname.tex \\\vspace{1mm} Seite \thepage \protect{ }von \pageref{LastPage}}
+        \renewcommand{\headrulewidth}{0.5pt}
+        \renewcommand{\footrulewidth}{0.5pt}
+    }
+}
+
+\newcommand{\createpagestyle}{
+    \lhead{\sffamily \currentname}
+    \rhead{\sffamily \thetitle}
+    \cfoot{\sffamily \phantom{X} \\\vspace{1mm} Version \theversion \\\vspace{1mm} \sffamily \today, \currenttime}
+    \lfoot{\sffamily Git ID: \texttt{\commit} \\\vspace{1mm} \thedepartement \\\vspace{1mm} \theauthor}
+    \rfoot{\sffamily on branch \texttt{\branch} \\\vspace{1mm} \jobname.tex \\\vspace{1mm} Seite \thepage \protect{ }von \pageref{LastPage}}
+    \renewcommand{\headrulewidth}{0.5pt}
+    \renewcommand{\footrulewidth}{0.5pt}
+    \pagestyle{fancy}
+
+    \makeatletter
+    \newcommand*{\currentname}{\TR@currentTitle}
+    \makeatother
+}
+
+\renewcommand{\maketitle}{
+    \begin{flushleft}
+        \Huge
+        \sffamily
+        \textbf{\thetitle}\\
+        \large
+        \vspace{3 mm}
+        \textcolor{black!50}{\thesubtitle}
+        \vspace{4 mm}
+    \end{flushleft}
+}
+
+\newcommand{\gitinfo}{\CatchFileDef{\headfull}{../.git/HEAD.}{}
+\StrGobbleRight{\headfull}{1}[\head]
+\StrBehind[2]{\head}{/}[\branch]
+\IfFileExists{../.git/refs/heads/\branch.}{%
+    \CatchFileDef{\commit}{../.git/refs/heads/\branch.}{}}{%
+    \newcommand{\commit}{\dots~(in \emph{packed-refs})}}}
