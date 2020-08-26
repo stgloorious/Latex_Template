@@ -1,5 +1,5 @@
 # Latex_Template
-### Latex template for small documents with git auto commit on build and id marking
+## Latex template for small documents with git auto commit on build and id marking
 
 * Modern title design
 * Added subtitle
@@ -16,11 +16,16 @@
 For Latex Workshop in VS Code:
 1. In settings.json, add "git_commit" to latex-workshop.latex.recipes
 
-![recipe](https://github.com/stgloorious/Latex_Template/blob/master/LaTeX_Einseitig/recipe.png)
+![recipe](https://github.com/stgloorious/Latex_Template/blob/master/docs/recipe.png)
 
 2. In the same file, add the "git_commit" tool to "latex-workshop.latex.tools",so it runs the batch file. 
 
-![tool](https://github.com/stgloorious/Latex_Template/blob/master/LaTeX_Einseitig/tools.png)
+![tool](https://github.com/stgloorious/Latex_Template/blob/master/docs/tools.png)
 
-![Screenshot](https://github.com/stgloorious/Latex_Template/blob/master/LaTeX_Einseitig/screenshot.png)
+### Acknowledgements
+Thanks **barghest** for their answer [here,](https://tex.stackexchange.com/questions/261341/using-texstudio-and-git-to-automatically-commit-using-the-current-date)
+thanks **CL.** for their answer [here.](https://tex.stackexchange.com/questions/455396/how-to-include-the-current-git-commit-id-and-branch-in-my-document)
+
+### Screenshot
+![Screenshot](https://github.com/stgloorious/Latex_Template/blob/master/docs/screenshot.png)
 
