@@ -20,7 +20,7 @@
 \usepackage{xcolor}
 \usepackage{titleref}
 \usepackage{blindtext}
-\usepackage{datetime}
+\usepackage[german]{datetime2}
 
 \newcommand{\version}[1]{\newcommand{\theversion}{#1}}
 \newcommand{\subtitle}[1]{\newcommand{\thesubtitle}{#1}}
@@ -44,7 +44,7 @@
     \fancypagestyle{TitlePageStyle}{ %% frontpage
         \lhead{}
         \rhead{\sffamily \theauthor}
-        \cfoot{\sffamily \phantom{X} \\\vspace{1mm} Version \theversion \\\vspace{1mm} \sffamily \today, \currenttime}
+        \cfoot{\sffamily \phantom{X} \\\vspace{1mm} Version \theversion \\\vspace{1mm} \sffamily \today, \DTMcurrenttime}
         \lfoot{\sffamily Git ID: \texttt{\commit} \\\vspace{1mm} \thedepartement \\\vspace{1mm} \theauthor}
         \rfoot{\sffamily on branch \texttt{\branch} \\\vspace{1mm} \jobname.tex \\\vspace{1mm} Seite \thepage \protect{ }von \pageref{LastPage}}
         \renewcommand{\headrulewidth}{0.5pt}
@@ -55,7 +55,7 @@
 \newcommand{\createpagestyle}{
     \lhead{\sffamily \currentname}
     \rhead{\sffamily \thetitle}
-    \cfoot{\sffamily \phantom{X} \\\vspace{1mm} Version \theversion \\\vspace{1mm} \sffamily \today, \currenttime}
+    \cfoot{\sffamily \phantom{X} \\\vspace{1mm} Version \theversion \\\vspace{1mm} \sffamily \today, \DTMcurrenttime}
     \lfoot{\sffamily Git ID: \texttt{\commit} \\\vspace{1mm} \thedepartement \\\vspace{1mm} \theauthor}
     \rfoot{\sffamily on branch \texttt{\branch} \\\vspace{1mm} \jobname.tex \\\vspace{1mm} Seite \thepage \protect{ }von \pageref{LastPage}}
     \renewcommand{\headrulewidth}{0.5pt}
