@@ -4,6 +4,7 @@
 * Modern title design
 * Added subtitle
 * Added custom fields (\version, \departement)
+* Dots after section numbers
 * Everything is stored in its own package for a clean .tex file
 * Changes are automatically committed to git on build
 * Every created document is unique and identifiable because of git SHA and a timestamp
