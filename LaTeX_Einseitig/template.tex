@@ -16,7 +16,20 @@
 \usepackage{titling} % Change title appearance
 \usepackage{sectsty} % Setting all section labels to sans serif font
 \usepackage{secdot} % Adds dot after section labels
-%\usepackage{mVersion}
+\usepackage{xstring}
+\usepackage{catchfile}
+
+\CatchFileDef{\headfull}{../.git/HEAD.}{}
+\StrGobbleRight{\headfull}{1}[\head]
+\StrBehind[2]{\head}{/}[\branch]
+\IfFileExists{../.git/refs/heads/\branch.}{%
+    \CatchFileDef{\commit}{../.git/refs/heads/\branch.}{}}{%
+    \newcommand{\commit}{\dots~(in \emph{packed-refs})}}
+
+%\usepackage[runs]{zref}
+
+%\setVersion{0.1} %Sets the "official" version number.
+%\increaseBuild %Increases the build number at each build.
 
 %%% PREAMBLE %%%
 % formatting and title
@@ -50,31 +63,11 @@
     \end{flushleft}
 }
 
-% Initialize the counter
-\newcounter{versionNumber}
-
-
-
-\makeatletter 
-% At the end write the current value back to the `.aux` file
-\AtEndDocument{%
-  \immediate\write\@auxout{%
-    \string\setcounter{versionNumber}{\number\value{versionNumber}}%
-  }%
-}
-
-\makeatother
-% Step the counter at the beginning
-\AtBeginDocument{%
-   \stepcounter{versionNumber}
-}
-
-    
 \geometry{
-  left=3cm,
-  right=3cm,
+  left=2cm,
+  right=2cm,
   top=2cm,
-  bottom=2cm
+  bottom=3cm
 }
 
 %\setlength\parindent{0pt}
@@ -88,14 +81,14 @@
 
 \fancypagestyle{TitlePageStyle}{ %% frontpage
     \fancyhead{}
-    \cfoot{\sffamily \today \\ Build:}
-    \lfoot{\sffamily Stefan Gloor \\ ETH-ITET}
-    \rfoot{\sffamily Seite \thepage \protect{ }von \pageref{LastPage}}
+    \cfoot{\phantom{X} \\ \phantom{X} \\ \sffamily \today }
+    \lfoot{\sffamily Git ID: \texttt{\commit} \\ ETH Zürich D-ITET \\ Stefan Gloor}
+    \rfoot{\sffamily on branch \texttt{\branch} \\ \jobname.tex \\ Seite \thepage \protect{ }von \pageref{LastPage} }
     \renewcommand{\headrulewidth}{0pt}
     \renewcommand{\footrulewidth}{0.5pt}
 }
 
-\cfoot{\sffamily \today} %% following pages
+\cfoot{\sffamily \today} %% following pages 
 \lfoot{\sffamily Stefan Gloor \\ ETH-ITET}
 \rfoot{\sffamily Seite \thepage \protect{ }von \pageref{LastPage}}
 \renewcommand{\headrulewidth}{0.5pt}
