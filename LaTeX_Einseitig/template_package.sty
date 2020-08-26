@@ -2,39 +2,41 @@
 \usepackage[utf8]{inputenc}
 \usepackage[ngerman]{babel}
 \usepackage[T1]{fontenc}
+\usepackage[german]{datetime2}
 
 % Graphics and Plots
 \usepackage{tikz}
-%\usepackage{textcomp}
 \usepackage{geometry}
-\usepackage{acronym}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usetikzlibrary{angles,shapes,arrows,arrows.meta, chains, external}
 \usepackage{fancyhdr}
 \usepackage[hidelinks]{hyperref}
-\usepackage{multicol} %
+
 \usepackage{lastpage} % Total number of pages
 \usepackage{titling} % Change title appearance
 \usepackage{sectsty} % Setting all section labels to sans serif font
 \usepackage{secdot} % Adds dot after section labels
-\usepackage{xstring}
-\usepackage{catchfile}
-\usepackage{xcolor}
-\usepackage{titleref}
-\usepackage{blindtext}
-\usepackage[german]{datetime2}
+\usepackage{xstring} % Used for gitinfo
+\usepackage{catchfile} % Used for gitinfo
+\usepackage{xcolor} % Text color
+\usepackage{titleref} % Access title and author labels
+\usepackage{blindtext} % Lorem Ipsum style
 
+% Special Fields
 \newcommand{\version}[1]{\newcommand{\theversion}{#1}}
 \newcommand{\subtitle}[1]{\newcommand{\thesubtitle}{#1}}
 \newcommand{\departement}[1]{\newcommand{\thedepartement}{#1}}
 
+% Misc formatting
 \newcommand{\onepagedesign}{
+    % Adds dots after section numbers
     \allsectionsfont{\normalfont\sffamily\bfseries}
     \sectiondot{section}
     \sectiondot{subsection}
     \sectiondot{subsubsection}
 
+    % Margins
     \geometry{
         left=2cm,
         right=2cm,
@@ -42,7 +44,7 @@
         bottom=3.5cm
     }
 }
-
+% Creates the style used for the first page
 \newcommand{\createtitlepagestyle}{
     \fancypagestyle{TitlePageStyle}{ %% frontpage
         \lhead{}
@@ -54,7 +56,7 @@
         \renewcommand{\footrulewidth}{0.5pt}
     }
 }
-
+% Creates the style for the rest of the pages
 \newcommand{\createpagestyle}{
     \lhead{\sffamily \currentname}
     \rhead{\sffamily \thetitle}
@@ -66,10 +68,11 @@
     \pagestyle{fancy}
 
     \makeatletter
-    \newcommand*{\currentname}{\TR@currentTitle}
+    \newcommand*{\currentname}{\TR@currentTitle} % make section name accessible
     \makeatother
 }
 
+% Maketitle
 \renewcommand{\maketitle}{
     \begin{flushleft}
         \Huge
@@ -82,6 +85,10 @@
     \end{flushleft}
 }
 
+% Gitinfo
+% Extracts Git ID and branch name from .git directory
+% ! Check path for .git directory !
+%
 \newcommand{\gitinfo}{\CatchFileDef{\headfull}{../.git/HEAD.}{}
 \StrGobbleRight{\headfull}{1}[\head]
 \StrBehind[2]{\head}{/}[\branch]
