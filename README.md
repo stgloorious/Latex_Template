@@ -22,5 +22,7 @@ For Latex Workshop in VS Code:
 
 ![tool](https://github.com/stgloorious/Latex_Template/blob/master/docs/tools.png)
 
+Thanks barghest for his answer [here.](https://tex.stackexchange.com/questions/261341/using-texstudio-and-git-to-automatically-commit-using-the-current-date)
+
 ![Screenshot](https://github.com/stgloorious/Latex_Template/blob/master/docs/screenshot.png)
 
