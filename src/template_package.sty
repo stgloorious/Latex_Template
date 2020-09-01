@@ -35,6 +35,7 @@
 \newcommand{\university}[1]{\newcommand{\theuniversity}{#1}}
 \newcommand{\semester}[1]{\newcommand{\thesemester}{#1}}
 \newcommand{\doctype}[1]{\newcommand{\thedoctype}{#1}}
+\renewcommand{\title}[1]{\newcommand{\themaintitle}{#1}}
 
 % Flags
 \newtoggle{fOnepage} % create bool fOnepage
@@ -114,7 +115,7 @@
     %% SHORT DOCUMENTS
     \iftoggle{fOnepage}{
         \lhead{\sffamily \currentname}
-        \rhead{\sffamily \thetitle}
+        \rhead{\sffamily \themaintitle}
         \cfoot{\sffamily \phantom{X} \\\vspace{1mm} Version \theversion \\\vspace{1mm} \sffamily \today, \DTMcurrenttime}
         \lfoot{\sffamily Git ID: \texttt{\commit} \\\vspace{1mm} \thedepartement \\\vspace{1mm} \theauthor}
         \rfoot{\sffamily on branch \texttt{\branch} \\\vspace{1mm} \jobname.tex \\\vspace{1mm} Seite \thepage \protect{ }von \pageref{LastPage}}
@@ -128,7 +129,7 @@
     }{}
     \iftoggle{fLargedoc}{ %% LARGE DOCUMENTS
         \lhead{\sffamily \currentname}
-        \rhead{\sffamily Titel? \thetitle}
+        \rhead{\sffamily \themaintitle}
         \cfoot{\sffamily \phantom{X} \\\vspace{1mm} Version \theversion \\\vspace{1mm} \sffamily \today, \DTMcurrenttime}
         \lfoot{\sffamily Git ID: \texttt{\commit} \\\vspace{1mm} \thedepartement \\\vspace{1mm} \theauthor}
         \rfoot{\sffamily on branch \texttt{\branch} \\\vspace{1mm} \jobname.tex \\\vspace{1mm} Seite \thepage \protect{ }von \pageref{LastPage}}
@@ -148,7 +149,7 @@
         \begin{flushleft}
             \Huge
             \sffamily
-            \textbf{\thetitle}\\
+            \textbf{\themaintitle}\\
             \large
             \vspace{3 mm}
             \textcolor{black!50}{\thesubtitle}
@@ -166,7 +167,7 @@
             \hrule
             \vspace{10 mm}
             \Huge
-            \textbf{\thetitle}\\
+            \textbf{\themaintitle}\\
             \Large
             \vspace{3 mm}
             \textcolor{black!50}{\thesubtitle}
