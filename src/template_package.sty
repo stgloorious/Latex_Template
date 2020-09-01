@@ -76,7 +76,7 @@
     \iftoggle{fOnepage}{
         %% SHORT DOCUMENTS
         \fancypagestyle{TitlePageStyle}{ %% frontpage
-            \lhead{}
+            \lhead{Short document}
             \rhead{\sffamily \theauthor}
             \cfoot{\sffamily \phantom{X} \\\vspace{1mm} Version \theversion \\\vspace{1mm} \sffamily \today, \DTMcurrenttime}
             \lfoot{\sffamily Git ID: \texttt{\commit} \\\vspace{1mm} \thedepartement \\\vspace{1mm} \theauthor}
@@ -87,7 +87,7 @@
     }{}
     \iftoggle{fLargedoc}{   %% LARGE DOCUMENTS
         \fancypagestyle{TitlePageStyle}{ %% frontpage
-        \lhead{}
+        \lhead{Long Document}
         \rhead{}
         \cfoot{\sffamily \phantom{X} \\\vspace{1mm} Version \theversion \\\vspace{1mm} \sffamily \today, \DTMcurrenttime}
         \lfoot{\sffamily Git ID: \texttt{\commit} \\\vspace{1mm} \thedepartement \\\vspace{1mm} \theauthor}
