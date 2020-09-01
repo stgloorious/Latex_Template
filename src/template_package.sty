@@ -104,36 +104,32 @@
 \newcommand{\createpagestyle}{
     %% SHORT DOCUMENTS
     \iftoggle{fOnepage}{
-        \fancypagestyle{PageStyle}{ %% frontpage
-            \lhead{\sffamily \currentname}
-            \rhead{\sffamily \thetitle}
-            \cfoot{\sffamily \phantom{X} \\\vspace{1mm} Version \theversion \\\vspace{1mm} \sffamily \today, \DTMcurrenttime}
-            \lfoot{\sffamily Git ID: \texttt{\commit} \\\vspace{1mm} \thedepartement \\\vspace{1mm} \theauthor}
-            \rfoot{\sffamily on branch \texttt{\branch} \\\vspace{1mm} \jobname.tex \\\vspace{1mm} Seite \thepage \protect{ }von \pageref{LastPage}}
-            \renewcommand{\headrulewidth}{0.5pt}
-            \renewcommand{\footrulewidth}{0.5pt}
-            \pagestyle{fancy}
+        \lhead{\sffamily \currentname}
+        \rhead{\sffamily \thetitle}
+        \cfoot{\sffamily \phantom{X} \\\vspace{1mm} Version \theversion \\\vspace{1mm} \sffamily \today, \DTMcurrenttime}
+        \lfoot{\sffamily Git ID: \texttt{\commit} \\\vspace{1mm} \thedepartement \\\vspace{1mm} \theauthor}
+        \rfoot{\sffamily on branch \texttt{\branch} \\\vspace{1mm} \jobname.tex \\\vspace{1mm} Seite \thepage \protect{ }von \pageref{LastPage}}
+        \renewcommand{\headrulewidth}{0.5pt}
+        \renewcommand{\footrulewidth}{0.5pt}
+        \pagestyle{fancy}
 
-            \makeatletter
-            \newcommand*{\currentname}{\TR@currentTitle} % make section name accessible
-            \makeatother
-        }
+        \makeatletter
+        \newcommand*{\currentname}{\TR@currentTitle} % make section name accessible
+        \makeatother
     }{}
     \iftoggle{fLargedoc}{ %% LARGE DOCUMENTS
-        \fancypagestyle{PageStyle}{ %% frontpage
-            \lhead{\sffamily \currentname}
-            \rhead{\sffamily \thetitle}
-            \cfoot{\sffamily \phantom{X} \\\vspace{1mm} Version \theversion \\\vspace{1mm} \sffamily \today, \DTMcurrenttime}
-            \lfoot{\sffamily Git ID: \texttt{\commit} \\\vspace{1mm} \thedepartement \\\vspace{1mm} \theauthor}
-            \rfoot{\sffamily on branch \texttt{\branch} \\\vspace{1mm} \jobname.tex \\\vspace{1mm} Seite \thepage \protect{ }von \pageref{LastPage}}
-            \renewcommand{\headrulewidth}{0.5pt}
-            \renewcommand{\footrulewidth}{0.5pt}
-            \pagestyle{fancy}
+        \lhead{\sffamily \currentname}
+        \rhead{\sffamily \thetitle}
+        \cfoot{\sffamily \phantom{X} \\\vspace{1mm} Version \theversion \\\vspace{1mm} \sffamily \today, \DTMcurrenttime}
+        \lfoot{\sffamily Git ID: \texttt{\commit} \\\vspace{1mm} \thedepartement \\\vspace{1mm} \theauthor}
+        \rfoot{\sffamily on branch \texttt{\branch} \\\vspace{1mm} \jobname.tex \\\vspace{1mm} Seite \thepage \protect{ }von \pageref{LastPage}}
+        \renewcommand{\headrulewidth}{0.5pt}
+        \renewcommand{\footrulewidth}{0.5pt}
+        \pagestyle{fancy}
 
-            \makeatletter
-            \newcommand*{\currentname}{\TR@currentTitle} % make section name accessible
-            \makeatother
-        }
+        \makeatletter
+        \newcommand*{\currentname}{\TR@currentTitle} % make section name accessible
+        \makeatother
     }{}
 }
 
