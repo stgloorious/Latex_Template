@@ -33,7 +33,7 @@
 \patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{TitlePageStyle}}{}{}
 \titleformat{\chapter}[block]{
     \vspace{-20mm}\sffamily\bfseries\fontsize{40}{48}\selectfont\raggedleft
-}{}{0pt}{}[{\raggedleft\fontsize{80}{48}\selectfont\transparent{0.5}\textcolor{black!50}{\thechapter}}]
+}{}{0pt}{\raggedleft\fontsize{80}{48}\selectfont\transparent{0.5}\textcolor{black!50}{\thechapter}}[]
 
 \begin{document} 
     \thispagestyle{TitlePageStyle} % first page has title page style
