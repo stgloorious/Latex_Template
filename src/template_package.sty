@@ -80,6 +80,9 @@
         \vspace{-30mm}\sffamily\bfseries\fontsize{36}{48}\selectfont\raggedleft
     }{{\fontsize{80}{48}\selectfont\textcolor{black!20}{\thechapter}}}{0pt}{}[\hrule]
 
+    % Increase numbering depth, so subsubsection are also numbered
+    \setcounter{secnumdepth}{3}
+
     % If fOnepage is true (aka \onepagedesign was called), throw an error message. Else, set fLargedoc = true.
     \iftoggle{fOnepage}{\errmessage{Choose either onepagedesign or largedocdesign (both commands detected!)}}{\toggletrue{fLargedoc}}
 
