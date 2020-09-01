@@ -3,7 +3,8 @@
 %
 % Created 1. September 2020
 
-\documentclass[a4paper]{book} % document class
+% Use article for \onepagedesign and book for \largedocdesign
+\documentclass[a4paper]{article} % document class
 \usepackage{template_package} % all necessary things
 
 % Large document with title page
@@ -37,7 +38,7 @@
     
     % *** CONTENT *** %
 
-    \chapter{Vorwort}
+    %\chapter{Vorwort}
          \section{Einleitung}
              \subsection{Beispiel}
                  \blindtext
@@ -49,13 +50,13 @@
                 \blindmathpaper
         \section{Hauptteil}
             \blindtext
-    \chapter{Nächstes Kapitel}
+    %\chapter{Nächstes Kapitel}
         \section{Erste Schritte}
             \blindmathpaper
         \section{Weitere Schritte}
             \blindtext
             
-    \chapter{Schlussfolgerung}
+    %\chapter{Schlussfolgerung}
         \blindmathpaper
 
 \end {document}
