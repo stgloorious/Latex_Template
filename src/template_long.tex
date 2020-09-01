@@ -35,8 +35,9 @@
 
     \thispagestyle{TitlePageStyle} % first page has title page style
     \maketitle % draw title and subtitle
+    \newcommand{\cftXfont}{\sffamily}
     \renewcommand{\cftsecfont}{\sffamily\textbf{Section }}
-    %\renewcommand{\cftXaftersnumb}{Hi}
+    \newcommand{\cftXaftersnumb}{Hi}
     \tableofcontents
     \newpage
 
