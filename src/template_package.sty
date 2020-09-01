@@ -75,6 +75,7 @@
 % Creates the style used for the first page
 \newcommand{\createtitlepagestyle}{
     \ifbool{fOnepage}{
+        %% SHORT DOCUMENTS
         \fancypagestyle{TitlePageStyle}{ %% frontpage
             \lhead{}
             \rhead{\sffamily \theauthor}
@@ -85,7 +86,7 @@
             \renewcommand{\footrulewidth}{0.5pt}
         }
     }
-    {
+    {   %% LARGE DOCUMENTS
         \fancypagestyle{TitlePageStyle}{ %% frontpage
         \lhead{}
         \rhead{}
@@ -99,6 +100,7 @@
 }
 % Creates the style for the rest of the pages
 \newcommand{\createpagestyle}{
+    %% SHORT DOCUMENTS
     \ifbool{fOnepage}{
         \lhead{\sffamily \currentname}
         \rhead{\sffamily \thetitle}
@@ -113,13 +115,14 @@
         \newcommand*{\currentname}{\TR@currentTitle} % make section name accessible
         \makeatother
     }
-    {
+    { %% LARGE DOCUMENTS
 
     }
 }
 
 % Maketitle
 \ifbool{fOnepage}{
+    %% SHORT DOCUMENTS
     \renewcommand{\maketitle}{
         \begin{flushleft}
             \Huge
@@ -132,7 +135,7 @@
         \end{flushleft}
     }
 }
-{
+{ %% LARGE DOCUMENTS
     \renewcommand{\maketitle}{
         \begin{center}
             \Huge
