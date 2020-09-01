@@ -29,6 +29,7 @@
 \newcommand{\version}[1]{\newcommand{\theversion}{#1}}
 \newcommand{\subtitle}[1]{\newcommand{\thesubtitle}{#1}}
 \newcommand{\departement}[1]{\newcommand{\thedepartement}{#1}}
+\newcommand{\semester}[1]{\newcommand{\thesemester}{#1}}
 
 % Flags
 \newtoggle{fOnepage} % create bool fOnepage
@@ -162,6 +163,8 @@
             \Large{\theauthor}\\
             \vspace{10 mm}
             \Large{\today}
+            \vspace{10 mm}
+            \Large{\thesemester}
             \newpage
         \end{center}
     }{}
