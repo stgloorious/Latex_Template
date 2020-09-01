@@ -33,7 +33,7 @@
 \patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{TitlePageStyle}}{}{}
 \titleformat{\chapter}[hang]{
     \vspace{-20mm}\sffamily\bfseries\fontsize{40}{48}\selectfont\raggedright
-}{\raggedleft Label}{0pt}{Before}[After\hrule]
+}{{\raggedleft Label}}{0pt}{Before}[After\hrule]
 
 %{\raggedleft\fontsize{80}{48}\selectfont\transparent{0.5}\textcolor{black!50}{\thechapter.}}
 
