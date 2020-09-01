@@ -87,12 +87,12 @@
     }
     {
         \fancypagestyle{TitlePageStyle}{ %% frontpage
-        \lhead{LARGE!}
-        \rhead{\sffamily \theauthor}
+        \lhead{}
+        \rhead{}
         \cfoot{\sffamily \phantom{X} \\\vspace{1mm} Version \theversion \\\vspace{1mm} \sffamily \today, \DTMcurrenttime}
         \lfoot{\sffamily Git ID: \texttt{\commit} \\\vspace{1mm} \thedepartement \\\vspace{1mm} \theauthor}
         \rfoot{\sffamily on branch \texttt{\branch} \\\vspace{1mm} \jobname.tex \\\vspace{1mm} Seite \thepage \protect{ }von \pageref{LastPage}}
-        \renewcommand{\headrulewidth}{0.5pt}
+        \renewcommand{\headrulewidth}{0pt}
         \renewcommand{\footrulewidth}{0.5pt}
     }
     }
