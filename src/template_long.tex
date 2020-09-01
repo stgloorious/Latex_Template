@@ -31,7 +31,7 @@
 \createpagestyle
 
 \patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{TitlePageStyle}}{}{}
-\titleformat{\chapter}[hang]{\sffamily\bfseries\fontsize{40}{48}\selectfont}{}{0pt}{}[\begin{flushright}
+\titleformat{\chapter}[hang]{\vspace{-20mm}\sffamily\bfseries\fontsize{40}{48}\selectfont}{}{0pt}{}[\begin{flushright}
 {\fontsize{80}{48}\selectfont\vspace{-20mm}\thechapter}\end{flushright}]
 
 \begin{document} 
