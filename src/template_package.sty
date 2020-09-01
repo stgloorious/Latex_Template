@@ -23,10 +23,15 @@
 \usepackage{titleref} % Access title and author labels
 \usepackage{blindtext} % Lorem Ipsum style
 
+\usepackage{etoolbox} % Boolean flags
+
 % Special Fields
 \newcommand{\version}[1]{\newcommand{\theversion}{#1}}
 \newcommand{\subtitle}[1]{\newcommand{\thesubtitle}{#1}}
 \newcommand{\departement}[1]{\newcommand{\thedepartement}{#1}}
+
+% Flags
+\newbool{fOnepage} % create bool fOnepage
 
 % Misc formatting
 \newcommand{\onepagedesign}{
@@ -43,6 +48,24 @@
         top=2cm,
         bottom=3.5cm
     }
+    \booltrue{fOnepage} % fOnepage = true
+}
+\newcommand{\largedocdesign}{
+    % Adds dots after section numbers
+    \allsectionsfont{\normalfont\sffamily\bfseries}
+    \sectiondot{section}
+    \sectiondot{subsection}
+    \sectiondot{subsubsection}
+
+    % Margins
+    \geometry{
+        left=2cm,
+        right=2cm,
+        top=2cm,
+        bottom=3.5cm
+    }
+
+    \ifbool{fOnepage}{\PackageError{Choose either onepagedesign or largedocdesign (both commands detected!)}}{\def\islargedoc{}}
 }
 % Creates the style used for the first page
 \newcommand{\createtitlepagestyle}{
