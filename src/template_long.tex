@@ -31,9 +31,9 @@
 \createpagestyle
 
 \patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{TitlePageStyle}}{}{}
-\titleformat{\chapter}[hang]{
+\titleformat{\chapter}[display]{
     \sffamily\bfseries\fontsize{40}{48}\selectfont\raggedleft
-}{{Label}}{5pt}{Before}[\hrule]
+}{{Label}}{0pt}{Before}[\hrule]
 
 %{\raggedleft\fontsize{80}{48}\selectfont\transparent{0.5}\textcolor{black!50}{\thechapter.}}
 
