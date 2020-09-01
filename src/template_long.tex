@@ -33,9 +33,9 @@
 \patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{TitlePageStyle}}{}{}
 \titleformat{\chapter}[display]{
     \sffamily\bfseries\fontsize{40}{48}\selectfont\raggedleft
-}{{Label}}{0pt}{Before}[\hrule]
+}{{\fontsize{80}{48}\selectfont\textcolor{black!50}{\thechapter.}}}{0pt}{}[\hrule]
 
-%{\raggedleft\fontsize{80}{48}\selectfont\transparent{0.5}\textcolor{black!50}{\thechapter.}}
+
 
 \begin{document} 
     \thispagestyle{TitlePageStyle} % first page has title page style
