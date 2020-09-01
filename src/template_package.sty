@@ -51,7 +51,6 @@
     }
     % If fLargedoc is true (aka \onepagedesign was called), throw an error message. Else, set fOnepage = true.
     \iftoggle{fLargedoc}{\errmessage{Choose either onepagedesign or largedocdesign (both commands detected!)}}{\toggletrue{fOnepage}}
-
 }
 \newcommand{\largedocdesign}{
     % Adds dots after section numbers
