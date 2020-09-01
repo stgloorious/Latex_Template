@@ -30,9 +30,9 @@
 \createtitlepagestyle
 \createpagestyle
 
+\patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{fancy}}{}{}
 \titleformat{\chapter}[hang] 
 {\sffamily\bfseries\fontsize{40}{48}\selectfont}{Test \thechapter:}{1em}{} 
-
 
 \begin{document} 
     \thispagestyle{TitlePageStyle} % first page has title page style
