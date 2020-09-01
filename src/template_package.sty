@@ -74,14 +74,27 @@
 }
 % Creates the style used for the first page
 \newcommand{\createtitlepagestyle}{
-    \fancypagestyle{TitlePageStyle}{ %% frontpage
-        \lhead{}
+    \ifbool{fOnepage}{
+        \fancypagestyle{TitlePageStyle}{ %% frontpage
+            \lhead{}
+            \rhead{\sffamily \theauthor}
+            \cfoot{\sffamily \phantom{X} \\\vspace{1mm} Version \theversion \\\vspace{1mm} \sffamily \today, \DTMcurrenttime}
+            \lfoot{\sffamily Git ID: \texttt{\commit} \\\vspace{1mm} \thedepartement \\\vspace{1mm} \theauthor}
+            \rfoot{\sffamily on branch \texttt{\branch} \\\vspace{1mm} \jobname.tex \\\vspace{1mm} Seite \thepage \protect{ }von \pageref{LastPage}}
+            \renewcommand{\headrulewidth}{0.5pt}
+            \renewcommand{\footrulewidth}{0.5pt}
+        }
+    }
+    {
+        \fancypagestyle{TitlePageStyle}{ %% frontpage
+        \lhead{LARGE!}
         \rhead{\sffamily \theauthor}
         \cfoot{\sffamily \phantom{X} \\\vspace{1mm} Version \theversion \\\vspace{1mm} \sffamily \today, \DTMcurrenttime}
         \lfoot{\sffamily Git ID: \texttt{\commit} \\\vspace{1mm} \thedepartement \\\vspace{1mm} \theauthor}
         \rfoot{\sffamily on branch \texttt{\branch} \\\vspace{1mm} \jobname.tex \\\vspace{1mm} Seite \thepage \protect{ }von \pageref{LastPage}}
         \renewcommand{\headrulewidth}{0.5pt}
         \renewcommand{\footrulewidth}{0.5pt}
+    }
     }
 }
 % Creates the style for the rest of the pages
