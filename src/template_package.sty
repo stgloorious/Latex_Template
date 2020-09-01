@@ -32,6 +32,7 @@
 
 % Flags
 \newbool{fOnepage} % create bool fOnepage
+\newbool{fLargedoc} % create bool fLargedoc
 
 % Misc formatting
 \newcommand{\onepagedesign}{
@@ -48,7 +49,9 @@
         top=2cm,
         bottom=3.5cm
     }
-    \booltrue{fOnepage} % fOnepage = true
+    % If fLargedoc is true (aka \onepagedesign was called), throw an error message. Else, set fOnepage = true.
+    \ifbool{fLargedoc}{\errmessage{Choose either onepagedesign or largedocdesign (both commands detected!)}}{\booltrue{fOnepage}}
+
 }
 \newcommand{\largedocdesign}{
     % Adds dots after section numbers
@@ -65,7 +68,9 @@
         bottom=3.5cm
     }
 
-    \ifbool{fOnepage}{\PackageError{Choose either onepagedesign or largedocdesign (both commands detected!)}}{\def\islargedoc{}}
+    % If fOnepage is true (aka \onepagedesign was called), throw an error message. Else, set fLargedoc = true.
+    \ifbool{fOnepage}{\errmessage{Choose either onepagedesign or largedocdesign (both commands detected!)}}{\booltrue{fLargedoc}}
+    
 }
 % Creates the style used for the first page
 \newcommand{\createtitlepagestyle}{
