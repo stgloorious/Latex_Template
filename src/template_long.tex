@@ -33,7 +33,7 @@
 \patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{TitlePageStyle}}{}{}
 \titleformat{\chapter}[block]{
     \vspace{-20mm}\sffamily\bfseries\fontsize{40}{48}\selectfont\raggedright
-}{}{0pt}{{\vspace{40pt}\raggedleft\fontsize{80}{48}\selectfont\transparent{0.5}\textcolor{black!50}{\thechapter.}}}[\hrule]
+}{}{0pt}{{\raggedleft\fontsize{80}{48}\selectfont\transparent{0.5}\textcolor{black!50}{\thechapter.}}}[\hrule]
 
 \begin{document} 
     \thispagestyle{TitlePageStyle} % first page has title page style
@@ -68,19 +68,19 @@
          \section{Einleitung}
              \subsection{Beispiel}
                  \blindtext
-            \subsection{Vorschlag}
-                \blindtext
-                \subsubsection{Hinweis}
-                    \blindtext
-            \subsection{Überlegungen}
-                \blindmathpaper
-        \section{Hauptteil}
-            \blindtext
-        \section{Fazit}
-    \chapter{Nächstes Kapitel}
-        \section{Erste Schritte}
-            \blindmathpaper
-        \section{Weitere Schritte}
-            \blindtext
+    %         \subsection{Vorschlag}
+    %             \blindtext
+    %             \subsubsection{Hinweis}
+    %                 \blindtext
+    %         \subsection{Überlegungen}
+    %             \blindmathpaper
+    %     \section{Hauptteil}
+    %         \blindtext
+    %     \section{Fazit}
+    % \chapter{Nächstes Kapitel}
+    %     \section{Erste Schritte}
+    %         \blindmathpaper
+    %     \section{Weitere Schritte}
+    %         \blindtext
 
 \end {document}
