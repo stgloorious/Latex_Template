@@ -35,7 +35,11 @@
 
     \thispagestyle{TitlePageStyle} % first page has title page style
     \maketitle % draw title and subtitle
-    {\tableofcontents}
+    \renewcommand{\cftsecfont}{\bfseries}
+    \renewcommand{\cftfigfont}{Figure }
+    \renewcommand{\cfttabfont}{Table }
+    %\renewcommand{\cftXaftersnumb}{Hi}
+    \tableofcontents
     \newpage
 
     % *** CONTENT *** %
