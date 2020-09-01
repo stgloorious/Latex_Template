@@ -30,40 +30,11 @@
 \createtitlepagestyle
 \createpagestyle
 
-\patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{TitlePageStyle}}{}{}
-\titleformat{\chapter}[display]{
-    \vspace{-30mm}\sffamily\bfseries\fontsize{36}{48}\selectfont\raggedleft
-}{{\fontsize{80}{48}\selectfont\textcolor{black!20}{\thechapter}}}{0pt}{}[\hrule]
-
-
-
 \begin{document} 
     \thispagestyle{TitlePageStyle} % first page has title page style
     \maketitle % draw title and subtitle
-    \tocloftpagestyle{fancy} % Page with TOC has same style as title page
-    \renewcommand{\cfttoctitlefont}{\sffamily \bfseries \Large}
-    \renewcommand{\cftchapfont}{\sffamily \bfseries \large}
-    \renewcommand{\cftsecfont}{\sffamily \bfseries}
-    \renewcommand{\cftsubsecfont}{\sffamily}
-    \renewcommand{\cftsubsubsecfont}{\sffamily}
-    \renewcommand{\cftchappagefont}{\sffamily \bfseries \large}
-    \renewcommand{\cftsecpagefont}{\sffamily \bfseries}
-    \renewcommand{\cftsubsecpagefont}{\sffamily}
-    \renewcommand{\cftsubsubsecpagefont}{\sffamily}
-    \renewcommand{\cftchapaftersnum}{\bfseries\large.}
-    \renewcommand{\cftsecaftersnum}{\bfseries.}
-    \renewcommand{\cftsubsecaftersnum}{.}
-    \renewcommand{\cftsubsubsecaftersnum}{.}
-    \renewcommand{\cftbeforechapskip}{4mm}
-    \renewcommand{\cftbeforesecskip}{2mm}
-    \renewcommand{\cftbeforesubsecskip}{2mm}
-    \renewcommand{\cftbeforesubsubsecskip}{2mm}
-    \setlength{\cftbeforetoctitleskip}{0pt}
-    \setlength{\cftaftertoctitleskip}{10pt}
-    \tableofcontents
-    \newpage
+    \toc % table of contents
     
-
     % *** CONTENT *** %
 
     \chapter{Vorwort}
@@ -79,6 +50,7 @@
         \section{Hauptteil}
             \blindtext
         \section{Fazit}
+            \blindtext
     \chapter{Nächstes Kapitel}
         \section{Erste Schritte}
             \blindmathpaper
