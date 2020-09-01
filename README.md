@@ -32,5 +32,9 @@ Thanks **barghest** for their answer [here,](https://tex.stackexchange.com/quest
 thanks **CL.** for their answer [here.](https://tex.stackexchange.com/questions/455396/how-to-include-the-current-git-commit-id-and-branch-in-my-document)
 
 ### Screenshot
-![Screenshot](https://github.com/stgloorious/Latex_Template/blob/master/docs/screenshot.png)
+**Short/Simple Document "One-pager"**
+![Short](https://github.com/stgloorious/Latex_Template/blob/master/docs/short.png)
+
+**Long Document with Title page (Thesis/Projects etc.)**
+![Long](https://github.com/stgloorious/Latex_Template/blob/master/docs/long.png)
 
