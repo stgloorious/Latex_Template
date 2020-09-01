@@ -30,7 +30,9 @@
 \createtitlepagestyle
 \createpagestyle
 
-\titleformat{\chapter}[display]{\bfseries\sffamily\fontsize{40}{48}\selectfont}{Label}{10pt}{\thechapter. }[After]
+\titleformat{\chapter}[display]{\bfseries\sffamily\fontsize{40}{48}\selectfont}{Label}{0pt}{\begin{flushright}
+    \thechapter
+\end{flushright}}[After]
 
 
 \begin{document} 
