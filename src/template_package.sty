@@ -120,8 +120,8 @@
 }
 
 % Maketitle
-\iftoggle{fOnepage}{ %% SHORT DOCUMENTS
-    \renewcommand{\maketitle}{
+\renewcommand{\maketitle}{
+    \iftoggle{fOnepage}{ %% SHORT DOCUMENTS
         \begin{flushleft}
             \Huge
             \sffamily
@@ -131,10 +131,8 @@
             \textcolor{black!50}{\thesubtitle}
             \vspace{4 mm}
         \end{flushleft}
-    }
-}{}
-\iftoggle{fLargedoc}{ %% LARGE DOCUMENTS
-    \renewcommand{\maketitle}{
+    }{}
+    \iftoggle{fLargedoc}{ %% LARGE DOCUMENTS
         \begin{center}
             \sffamily
             \includegraphics[width=8cm]{eth_logo.png}\\
@@ -155,8 +153,9 @@
             \Large{\today}
             \newpage
         \end{center}
-    }
-}{}
+    }{}
+}
+
 
 % Gitinfo
 % Extracts Git ID and branch name from .git directory
