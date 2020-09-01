@@ -16,13 +16,14 @@
 (You need to run the recipe for the build process first, then run the auto commit (so you get your SHA) and then build again, so the SHA can be put in the pdf)
 
 **For consistency, the housekeeper is also run via a .bat file that needs to be in the same directory as the .tex file**
+(You could also have the Python file executed directly by Latex Workshop)
 
 For Latex Workshop in VS Code:
 1. In settings.json, add "git_commit" and "latex_cleanup" to latex-workshop.latex.recipes
 
 ![recipe](https://github.com/stgloorious/Latex_Template/blob/master/docs/recipe.png)
 
-2. In the same file, add the "git_commit" and "latex_cleanup" tool to "latex-workshop.latex.tools",so it runs the batch file. 
+2. In the same file, add the "git_commit" and "latex_cleanup" tool to "latex-workshop.latex.tools", so it runs the batch files. 
 
 ![tool](https://github.com/stgloorious/Latex_Template/blob/master/docs/tools.png)
 
