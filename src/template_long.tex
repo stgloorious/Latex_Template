@@ -4,13 +4,13 @@
 % Created 1. September 2020
 
 % Use article for \onepagedesign and book for \largedocdesign
-\documentclass[a4paper]{article} % document class
+\documentclass[a4paper]{book} % document class
 \usepackage{template_package} % all necessary things
 
 % Large document with title page
 % and table of contents
-%\largedocdesign
-\onepagedesign
+\largedocdesign
+%\onepagedesign
 
 % *** DETAILS *** %
 \version{1.0.0}
@@ -34,11 +34,11 @@
 \begin{document} 
     \thispagestyle{TitlePageStyle} % first page has title page style
     \maketitle % draw title and subtitle
-    %\toc % table of contents
+    \toc % table of contents
     
     % *** CONTENT *** %
 
-    %\chapter{Vorwort}
+    \chapter{Vorwort}
          \section{Einleitung}
              \subsection{Beispiel}
                  \blindtext
@@ -50,13 +50,13 @@
                 \blindmathpaper
         \section{Hauptteil}
             \blindtext
-    %\chapter{Nächstes Kapitel}
+    \chapter{Nächstes Kapitel}
         \section{Erste Schritte}
             \blindmathpaper
         \section{Weitere Schritte}
             \blindtext
             
-    %\chapter{Schlussfolgerung}
+    \chapter{Schlussfolgerung}
         \blindmathpaper
 
 \end {document}
