@@ -88,7 +88,7 @@
     \iftoggle{fOnepage}{
         %% SHORT DOCUMENTS
         \fancypagestyle{TitlePageStyle}{ %% frontpage
-            \lhead{Normale Seite}
+            \lhead{}
             \rhead{\sffamily \theauthor}
             \cfoot{\sffamily \phantom{X} \\\vspace{1mm} Version \theversion \\\vspace{1mm} \sffamily \today, \DTMcurrenttime}
             \lfoot{\sffamily Git ID: \texttt{\commit} \\\vspace{1mm} \thedepartement \\\vspace{1mm} \theauthor}
@@ -128,7 +128,7 @@
     }{}
     \iftoggle{fLargedoc}{ %% LARGE DOCUMENTS
         \lhead{\sffamily \currentname}
-        \rhead{\sffamily \thetitle}
+        \rhead{\sffamily Titel? \thetitle}
         \cfoot{\sffamily \phantom{X} \\\vspace{1mm} Version \theversion \\\vspace{1mm} \sffamily \today, \DTMcurrenttime}
         \lfoot{\sffamily Git ID: \texttt{\commit} \\\vspace{1mm} \thedepartement \\\vspace{1mm} \theauthor}
         \rfoot{\sffamily on branch \texttt{\branch} \\\vspace{1mm} \jobname.tex \\\vspace{1mm} Seite \thepage \protect{ }von \pageref{LastPage}}
