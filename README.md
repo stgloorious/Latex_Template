@@ -9,7 +9,7 @@
 * Changes are automatically committed to git on build
 * Every created document is unique and identifiable because of git SHA and a timestamp
 * All useful metadata contained in footer
-* All unnecessary files are deleted automatically after build process [(Original latex_housekeeper.py by Andrej Scheuer)](https://gitlab.com/Hoziax/latex/-/blob/c0d830c560070cc12519f67887c70b934c7d618d/latex_housekeeper.py)
+* All unnecessary files are deleted automatically after build process [(Original housekeeper by Andrej Scheuer)](https://gitlab.com/Hoziax/latex/-/blob/c0d830c560070cc12519f67887c70b934c7d618d/latex_housekeeper.py)
 * Smaller margins 
 
 **To enable auto git commit, place .bat file with the .tex you're compiling and change your latex recipe so it executes this bat file before the build process.** 
