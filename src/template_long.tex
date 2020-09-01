@@ -31,7 +31,7 @@
 \createpagestyle
 
 \patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{TitlePageStyle}}{}{}
-\titleformat{\chapter}[frame]{
+\titleformat{\chapter}[hang]{
     \vspace{-20mm}\sffamily\bfseries\fontsize{40}{48}\selectfont\raggedright
 }{Label}{0pt}{}[\hrule]
 
