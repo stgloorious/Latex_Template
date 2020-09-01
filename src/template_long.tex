@@ -31,7 +31,7 @@
 \createpagestyle
 
 \patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{TitlePageStyle}}{}{}
-\titleformat{\chapter}[hang]{\sffamily\bfseries\fontsize{40}{48}\selectfont}{\thechapter}{0pt}{} 
+\titleformat{\chapter}[hang]{\sffamily\bfseries\fontsize{40}{48}\selectfont}{\raggedright\thechapter}{0pt}{} 
 
 \begin{document} 
     \thispagestyle{TitlePageStyle} % first page has title page style
