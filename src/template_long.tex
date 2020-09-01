@@ -30,7 +30,7 @@
 \createtitlepagestyle
 \createpagestyle
 
-\patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{fancy}}{}{}
+\patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{TitlePageStyle}}{}{}
 \titleformat{\chapter}[hang] 
 {\sffamily\bfseries\fontsize{40}{48}\selectfont}{Test \thechapter:}{1em}{} 
 
