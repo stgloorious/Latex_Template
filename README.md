@@ -3,11 +3,11 @@
 
 * Modern title design
 * Added subtitle
-* Added custom fields (\version, \departement)
+* Added custom fields (\version, \university, \departement etc.)
 * Dots after section numbers
 * Everything is stored in its own package for a clean .tex file
 * Changes are automatically committed to git on build
-* Every created document is unique and identifiable because of git SHA and a timestamp
+* Every created document is unique and identifiable due to git SHA and timestamp
 * All useful metadata contained in footer
 * All unnecessary files are deleted automatically after build process [(Original housekeeper by Andrej Scheuer)](https://gitlab.com/Hoziax/latex/-/blob/c0d830c560070cc12519f67887c70b934c7d618d/latex_housekeeper.py)
 * Smaller margins 
