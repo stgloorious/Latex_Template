@@ -35,6 +35,9 @@
 \usepackage{etoolbox} % Boolean flags
 \usepackage{titlesec} % Change chapter appearance
 \usepackage{lmodern} % modern font sizes
+\usepackage[skins,theorems]{tcolorbox} % fancy boxes
+\usepackage{tikz-3dplot} % 3d plots
+\usepackage{cancel}
 
 % Special Fields
 \newcommand{\version}[1]{\newcommand{\theversion}{#1}}
@@ -87,6 +90,7 @@
     \titleformat{\chapter}[display]{
         \vspace{-30mm}\sffamily\bfseries\fontsize{36}{48}\selectfont\raggedleft
     }{{\fontsize{80}{48}\selectfont\textcolor{black!20}{\thechapter}}}{0pt}{}[\hrule]
+    \patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{} % no new page after chapter
 
     % Increase numbering depth, so subsubsection are also numbered
     \setcounter{secnumdepth}{3}
@@ -217,6 +221,32 @@
     \setlength{\cftaftertoctitleskip}{10pt}
     \tableofcontents
     \newpage
+}
+
+% Fancy text boxes
+\newtcolorbox{important}{
+    title=Wichtig,
+    fonttitle=\bfseries,
+    colframe=red!50
+}
+\newtcolorbox{note}{
+    title=Notiz,
+    fonttitle=\bfseries,
+    colframe=black!50
+}
+\newtcolorbox{merke}{
+    title=Merke,
+    fonttitle=\bfseries,
+    colframe=black!30
+}
+\tcbset{highlight math style={
+  colframe=blue!20,colback=blue!20,arc=3pt,boxrule=0pt}
+}
+\newtcolorbox{highlight}{
+    colframe=blue!20,
+    colback=blue!20,
+    arc=3pt,
+    boxrule=0pt
 }
 
 
