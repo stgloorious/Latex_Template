@@ -46,6 +46,7 @@
 \newcommand{\university}[1]{\newcommand{\theuniversity}{#1}}
 \newcommand{\semester}[1]{\newcommand{\thesemester}{#1}}
 \newcommand{\doctype}[1]{\newcommand{\thedoctype}{#1}}
+\newcommand{\email}[1]{\newcommand{\theemail}{#1}}
 \renewcommand{\title}[1]{\newcommand{\themaintitle}{#1}}
 
 % Flags
@@ -190,10 +191,11 @@
             \hrule
             \vspace{50mm}
             \Large{\theauthor}\\
+            \Large{\url{\theemail}}\\
             \vspace{10 mm}
             \Large{\thedepartement}\\
             \Large{\thesemester}\\
-            \Large{\today}
+            \Large{\today}\\
             \newpage
         \end{center}
     }{}
