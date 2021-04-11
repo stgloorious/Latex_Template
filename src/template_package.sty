@@ -256,9 +256,23 @@
 % Extracts Git ID and branch name from .git directory
 % ! Check path for .git directory !
 %
-\newcommand{\gitinfo}{\CatchFileDef{\headfull}{../.git/HEAD.}{}
+% Gitinfo
+% Extracts Git ID and branch name from .git directory
+% ! Check path for .git directory !
+%
+% VVV -- USE THIS BELOW FOR LINUX -- VVV
+\newcommand{\gitinfo}{\CatchFileDef{\headfull}{../.git/HEAD}{}
 \StrGobbleRight{\headfull}{1}[\head]
 \StrBehind[2]{\head}{/}[\branch]
-\IfFileExists{../.git/refs/heads/\branch.}{%
-    \CatchFileDef{\commit}{../.git/refs/heads/\branch.}{}}{%
+\IfFileExists{../.git/refs/heads/\branch}{%
+    \CatchFileDef{\commit}{../.git/refs/heads/\branch}{}}{%
     \newcommand{\commit}{\dots~(in \emph{packed-refs})}}}
+    
+%% VVV -- USE THIS BELOW FOR WINDOWS -- VVV 
+    
+%\newcommand{\gitinfo}{\CatchFileDef{\headfull}{../.git/HEAD.}{}
+%\StrGobbleRight{\headfull}{1}[\head]
+%\StrBehind[2]{\head}{/}[\branch]
+%\IfFileExists{../.git/refs/heads/\branch.}{%
+%    \CatchFileDef{\commit}{../.git/refs/heads/\branch.}{}}{%
+%    \newcommand{\commit}{\dots~(in \emph{packed-refs})}}}
