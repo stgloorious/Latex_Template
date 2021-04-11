@@ -19,12 +19,34 @@
 ## General Setup Information
 Git-commit-on-build and the clean-up are achieved by having scripts executed when the build process is started. I use it with **Visual Studio Code** and the extension "Latex Workshop". Before following this guide, you should have VS Code with Latex Workshop up and running. If you plan to use it with a different environment, it propably requires heavy adjustments.
 
-### Linux
+If you don't wan't to adjust any paths the following structure should work:
 
-**To enable auto git commit, place the bash script with the .tex you're compiling and change your latex recipe so it executes the script before the build process.** 
+      project_directory
+      |
+      +--- .git
+      |
+      +--- src
+      |    |
+      |    +--- file.tex
+      |    |
+      |    +--- template_package.sty
+      |    |
+      |    +--- git_autosave.sh/.bat
+      |    |
+      |    +--- latex_cleanup.sh/.bat
+      |    |
+      |    +--- latex_housekeeper.py (Windows only)
+      |
+      +--- README.md
+      |
+      +--- ...
+
+## Linux Setup
+
+**To enable auto git commit, place the shell script with the .tex you're compiling and change your latex recipe so it executes the script before the build process.** 
 (You need to run the recipe for the build process first, then run the auto commit (so you get your SHA) and then build again, so the SHA can be put in the pdf)
 
-**The housekeeper consists of a simple bash script that also needs to be in the same directory as the .tex file**
+**The housekeeper consists of a simple shell script that also needs to be in the same directory as the .tex file**
 (For Linux, I don't use the housekeeper.py, latex_cleanup.sh does the file deletion).
 
 **Make sure you make both scripts executable! (e.g. with sudo chmod +x latex_cleanup.sh)**
@@ -40,16 +62,16 @@ For Latex Workshop in VS Code:
 
 **For some reason the paths works differently with Linux and Windows, so you'll need to uncomment the correct git integration in template_package.sty (end of file) !!!**
 
-### Windows
+## Windows Setup
 
 **To enable auto git commit, place .bat file with the .tex you're compiling and change your latex recipe so it executes the script before the build process.** 
 (You need to run the recipe for the build process first, then run the auto commit (so you get your SHA) and then build again, so the SHA can be put in the pdf)
 
 **The (python) housekeeper is also run via a .bat file that needs to be in the same directory as the .tex file**
-(You could also have the Python file executed directly by Latex Workshop, would propably make more sense)
+(You could also have the Python file executed directly by Latex Workshop, would probably make more sense)
 
 For Latex Workshop in VS Code:
-1. In settings.json, add "git_commit" and "latex_cleanup" to latex-workshop.latex.recipes
+1. In settings.json (File -> Preferences -> Settings -> Find "edit in settings.json"), add "git_commit" and "latex_cleanup" to latex-workshop.latex.recipes
 
 ![recipe](https://github.com/stgloorious/Latex_Template/blob/master/docs/recipe_windows.png)
 
