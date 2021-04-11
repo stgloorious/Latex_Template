@@ -1,1 +1,1 @@
-..\latex_housekeeper.py
+latex_housekeeper.py
