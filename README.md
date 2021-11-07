@@ -19,7 +19,7 @@
 ## General Setup Information
 Git-commit-on-build and the clean-up are achieved by having scripts executed when the build process is started. I use it with **Visual Studio Code** and the extension "Latex Workshop". Before following this guide, you should have VS Code with Latex Workshop up and running. If you plan to use it with a different environment, it probably requires heavy adjustments.
 
-If you don't wan't to adjust any paths the following structure should work:
+If you don't want to adjust any paths the following structure should work:
 
       project_directory
       |
